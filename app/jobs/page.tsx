@@ -74,8 +74,12 @@ export default function JobsPage() {
               Tags: {j.tags.join(", ")} | Posted: {j.posted} | Source: {j.source}
             </div>
             <div className="mt-2">
-              <a className="inline-flex px-4 py-2 bg-emerald-300 text-black font-bold rounded-lg"
-                 href={j.url} target="_blank" rel="noreferrer">Apply</a>
+              <a
+  className="inline-flex items-center justify-center px-4 py-2 bg-sky-300 text-black font-bold rounded-lg"
+  href={"/api/jobs/csv?" + new URLSearchParams({ q, region, remote }).toString()}
+>
+  Export CSV
+</a>
             </div>
           </div>
         ))}
