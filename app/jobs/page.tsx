@@ -56,7 +56,10 @@ export default function JobsPage() {
 
       <div className="grid gap-3">
         {data?.jobs.map(j => (
-          <div key={j.id} className="bg-neutral-900 border border-neutral-800 rounded-xl p-4">
+          <div
+  key={j.id}
+  className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 hover:border-neutral-700 hover:shadow transition"
+>
             <div className="flex items-start justify-between">
               <div>
                 <Link href={"/jobs/" + j.id} className="font-bold hover:underline">{j.title}</Link>
