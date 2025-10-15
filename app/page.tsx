@@ -43,25 +43,3 @@ export default async function HomePage() {
     </section>
   );
 }
-import GlassCard from "../components/GlassCard";
-
-export default function HomePage() {
-  return (
-    <main className="min-h-screen bg-neutral-950 text-white flex items-center justify-center p-8">
-      <div className="max-w-2xl w-full space-y-4">
-        <GlassCard
-          title="Weekly Highlights"
-          subtitle="Fresh music-tech openings"
-        >
-          <p>Spotify, SoundCloud, and Musixmatch are hiring this week.</p>
-        </GlassCard>
-
-        <GlassCard title="Did You Know?">
-          <p>
-            You can now export JSON reports directly from your Job Scout dashboard.
-          </p>
-        </GlassCard>
-      </div>
-    </main>
-  );
-}
